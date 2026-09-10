@@ -69,7 +69,7 @@ export default defineConfig({
     trace: 'on-first-retry',
 
     // Создание скриншотов при падении тестов
-    screenshot: 'only-on-failure',
+    screenshot: 'on',
 
     // Запись видео при падении тестов
     video: 'retain-on-failure',

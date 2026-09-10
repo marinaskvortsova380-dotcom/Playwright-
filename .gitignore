@@ -1,14 +1,14 @@
-# Dependency directories
+
 node_modules/
 
-# Playwright reports and artifacts
+
 /test-results/
 /playwright-report/
 /blob-report/
 /playwright/.cache/
 /playwright/.auth/
 
-# Cypress and other homeworks
+
 aqa-advanced_mskvortsova/
 cypress/
 DZ21/
