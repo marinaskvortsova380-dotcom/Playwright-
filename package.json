@@ -1,0 +1,42 @@
+{
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^22.20.2",
+    "cypress": "^15.20.1",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "eslint": "^10.8.0",
+    "globals": "^17.8.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^17.2.0",
+    "mocha": "^12.0.0",
+    "mochawesome": "^8.0.1",
+    "mochawesome-merge": "^5.1.1",
+    "mochawesome-report-generator": "^6.3.2",
+    "prettier": "^3.3.3"
+  },
+  "scripts": {
+    "prepare": "husky",
+    "cy:open": "cypress open",
+    "cy:run:qauto": "cypress run --config-file DZ21/cypress.qauto.config.js",
+    "cy:run:qauto2": "cypress run --config-file DZ21/cypress.qauto2.config.js",
+    "cy:run:dz22": "cypress run --config-file DZ22API/cypress.qauto.config.js",
+    "cy:open:qauto": "cypress open --config-file DZ21/cypress.qauto.config.js",
+    "cy:open:qauto2": "cypress open --config-file DZ21/cypress.qauto2.config.js",
+    "cy:open:dz22": "cypress open --config-file DZ22API/cypress.qauto.config.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js aqa-advanced_mskvortsova"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "eslint --fix"
+    ]
+  },
+  "dependencies": {
+    "axios": "^1.19.0",
+    "jest": "^30.4.2"
+  }
+}

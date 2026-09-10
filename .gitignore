@@ -1,0 +1,35 @@
+# Dependency directories
+node_modules/
+
+# Playwright reports and artifacts
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
+
+# Cypress and other homeworks
+aqa-advanced_mskvortsova/
+cypress/
+DZ21/
+DZ22API/
+DZSOAPAPI.json
+JavaScript1/
+*.postman_collection*
+Assertion Postman.txt
+note script.js
+Регулярные выражения.txt
+*.png
+js_homework*
+Task3_15.js
+Lesson*
+script.js
+test.js
+.agent/
+.vscode/
+.husky/
+.prettierrc
+eslint.config.mjs
+cypress.config.js
+jsconfig.json
+
