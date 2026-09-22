@@ -1,12 +1,18 @@
+# Environment variables
+.env
+.env.*
+!.env.example
 
+# Dependencies
 node_modules/
 
+# Playwright artifacts & reports
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+playwright/.auth/
 
-/test-results/
-/playwright-report/
-/blob-report/
-/playwright/.cache/
-/playwright/.auth/
 
 
 aqa-advanced_mskvortsova/
@@ -33,3 +39,4 @@ eslint.config.mjs
 cypress.config.js
 jsconfig.json
 
+node_modules
